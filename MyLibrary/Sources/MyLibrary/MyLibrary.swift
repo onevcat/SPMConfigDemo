@@ -3,15 +3,15 @@ import MachO
 public struct MyLibrary {
     
     #if DEBUG
-    public static let containsDebugFlag = true
+    public static let libContainsDebugFlag = true
     #else
-    public static let containsDebugFlag = false
+    public static let libContainsDebugFlag = false
     #endif
     
     #if CUSTOM
-    public static let containsCustomFlag = true
+    public static let libContainsCustomFlag = true
     #else
-    public static let containsCustomFlag = false
+    public static let libContainsCustomFlag = false
     #endif
     
     public static var architecture: String {

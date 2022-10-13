@@ -27,15 +27,14 @@ struct ContentView: View {
             
             Section("DEBUG flag") {
                 Text("App: \(appContainsDebugFlag ? "YES" : "NO")")
-                Text("Package: \(MyLibrary.containsDebugFlag ? "YES" : "NO")")
+                Text("Package: \(MyLibrary.libContainsDebugFlag ? "YES" : "NO")")
             }
             Section("CUSTOM flag") {
                 Text("App: \(appContainsCustomFlag ? "YES" : "NO")")
-                Text("Package: \(MyLibrary.containsCustomFlag ? "YES" : "NO")")
+                Text("Package: \(MyLibrary.libContainsCustomFlag ? "YES" : "NO")")
             }
         }
         .monospaced()
-        .padding()
     }
 }
 
