@@ -8,12 +8,33 @@
 import SwiftUI
 import MyLibrary
 
+#if DEBUG
+public let appContainsDebugFlag = true
+#else
+public let appContainsDebugFlag = false
+#endif
+
+#if CUSTOM
+public let appContainsCustomFlag = true
+#else
+public let appContainsCustomFlag = false
+#endif
+
 struct ContentView: View {
     var body: some View {
-        VStack {
+        Form {
             Text("Arch: \(MyLibrary.architecture)")
-            Text("Config: \(MyLibrary.containsDebugFlag ? "DEBUG" : "NO DEBUG")")
+            
+            Section("DEBUG flag") {
+                Text("App: \(appContainsDebugFlag ? "YES" : "NO")")
+                Text("Package: \(MyLibrary.containsDebugFlag ? "YES" : "NO")")
+            }
+            Section("CUSTOM flag") {
+                Text("App: \(appContainsCustomFlag ? "YES" : "NO")")
+                Text("Package: \(MyLibrary.containsCustomFlag ? "YES" : "NO")")
+            }
         }
+        .monospaced()
         .padding()
     }
 }
