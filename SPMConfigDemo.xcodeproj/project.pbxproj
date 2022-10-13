@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B61BDC328F7D06F00FC6199 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 4B61BDC228F7D06F00FC6199 /* MyLibrary */; };
 		4BAF65A828F7D02E00A6D2CB /* SPMConfigDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAF65A728F7D02E00A6D2CB /* SPMConfigDemoApp.swift */; };
 		4BAF65AA28F7D02E00A6D2CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAF65A928F7D02E00A6D2CB /* ContentView.swift */; };
 		4BAF65AC28F7D02F00A6D2CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BAF65AB28F7D02F00A6D2CB /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 		4BAF65A928F7D02E00A6D2CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4BAF65AB28F7D02F00A6D2CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BAF65AE28F7D02F00A6D2CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4BAF65B528F7D05300A6D2CB /* MyLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MyLibrary; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +28,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B61BDC328F7D06F00FC6199 /* MyLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B61BDC128F7D06F00FC6199 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4BAF659B28F7D02E00A6D2CB = {
 			isa = PBXGroup;
 			children = (
+				4BAF65B528F7D05300A6D2CB /* MyLibrary */,
 				4BAF65A628F7D02E00A6D2CB /* SPMConfigDemo */,
 				4BAF65A528F7D02E00A6D2CB /* Products */,
+				4B61BDC128F7D06F00FC6199 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +95,9 @@
 			dependencies = (
 			);
 			name = SPMConfigDemo;
+			packageProductDependencies = (
+				4B61BDC228F7D06F00FC6199 /* MyLibrary */,
+			);
 			productName = SPMConfigDemo;
 			productReference = 4BAF65A428F7D02E00A6D2CB /* SPMConfigDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -337,6 +352,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B61BDC228F7D06F00FC6199 /* MyLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4BAF659C28F7D02E00A6D2CB /* Project object */;
 }
